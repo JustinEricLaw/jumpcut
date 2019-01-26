@@ -1,0 +1,30 @@
+/**************************************************
+MIXINS: General
+**************************************************/
+@mixin flexbox-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/**************************************************
+MIXINS: Breakpoints
+**************************************************/
+@mixin breakpoint($point) {
+  @if $point == sm {
+    @media screen and (min-width: $break-sm) { @content; }
+  }
+  @if $point == md {
+    @media screen and (min-width: $break-md) { @content; }
+  }
+  @if $point == md2 {
+    @media screen and (min-width: $break-md2) { @content; }
+  }
+  @if $point == lg {
+    @media screen and (min-width: $break-lg) { @content; }
+  }
+  @if $point == xlg {
+    @media screen and (min-width: $break-xlg) { @content; }
+  }
+}

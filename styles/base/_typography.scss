@@ -1,0 +1,39 @@
+/* ******************************************
+Typography
+****************************************** */
+html {
+  font-size: 100%;
+  line-height: 1.4;
+  text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  // @include bp(sm) {
+  //   font-size: 110%;
+  // }
+
+  // @include bp(md) {
+  //   font-size: 115%;
+  // }
+
+  // @include bp(md2) {
+  //   font-size: 118%;
+  // }
+}
+
+p,
+li {
+}
+
+
+
+// ::-moz-selection {
+//   background: $secondary-color;
+//   color: #fff;
+// }
+
+// ::selection {
+//   background: $secondary-color;
+//   color: #fff;
+// }

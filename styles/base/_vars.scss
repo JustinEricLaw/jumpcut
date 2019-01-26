@@ -1,0 +1,40 @@
+/**************************************************
+Colors
+**************************************************/
+$primary-color: #3d343f; // Dark Grey
+$secondary-color: #54be8e; // Bright Green
+$border-color: #d3d3d3; // Light Grey
+
+
+/**************************************************
+Fonts
+**************************************************/
+$font-stack-display: 'Playfair Display', serif;
+$font-stack-main: 'cooper-hewitt', sans-serif;
+
+
+/**************************************************
+Spacing & Sizing
+**************************************************/
+$spacing: .75rem;
+$spacing2: 1.5rem;
+$spacing3: 2.25rem;
+$spacing4: 3rem;
+$spacing5: 4rem;
+$max-width: 75rem;
+
+
+/**************************************************
+VARIABLES: Timing
+**************************************************/
+$timing-duration: .75s;
+
+
+/**************************************************
+Breakpoints
+**************************************************/
+$break-sm: 31.25em; // 500px
+$break-md: 56.25em; // 900px
+$break-md2: 68.75em; // 1100px
+$break-lg: 87.5em; // 1400px
+$break-xlg: 112.5em; // 1800px
