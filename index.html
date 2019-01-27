@@ -51,13 +51,30 @@
             <h1 class="hero-h1">Sed augue ipsum egestas</h1>
             <h3 class="hero-h3">Curabitur nisi. Vivamus consectetuer hendreit.</h3>
           </div>
-          <div class="hero-search-container">
-            <div class="hero-search-input"></div>
-            <div class="hero-search-input"></div>
-            <div class="hero-search-input"></div>
-            <div class="hero-search-input"></div>
-            <button class="hero-search-btn">Search</button>
-          </div>
+
+          <form role="search">
+            <div class="hero-search-container">
+              <div class="hero-search-input-wrap">
+                <span class="fas fa-map-marker-alt hero-search-input-icon"></span>
+                <input type="search" class="hero-search-input hero-search-location" name="location" placeholder="Search by Location" aria-label="Enter a search location" required>
+              </div>
+              <div class="hero-search-input-wrap">
+                <span class="fas fa-bullseye hero-search-input-icon"></span>
+                <input type="search" class="hero-search-input hero-search-distance" name="distance"placeholder="Enter a Search Distance" aria-label="Enter a search distance" required>
+              </div>
+              <div class="hero-search-input-wrap">
+                <span class="fas fa-heart hero-search-input-icon"></span>
+                <span class="fas fa-times hero-search-input-close-icon"></span>
+                <input type="search" class="hero-search-input hero-search-category hero-search-cooking" name="category" placeholder="Enter a Category" aria-label="Enter a search category" required>
+              </div>
+              <div class="hero-search-input-wrap">
+                <span class="fas fa-lightbulb hero-search-input-icon"></span>
+                <span class="fas fa-times hero-search-input-close-icon"></span>
+                <input type="search" class="hero-search-input hero-search-category hero-search-cuisine" name="category" placeholder="Enter a Category" aria-label="Enter a search category">
+              </div>
+              <button class="hero-search-btn">Search</button>
+            </div>
+          </form>
         </div>
         <div class="hero-overlay"></div>
       </section>

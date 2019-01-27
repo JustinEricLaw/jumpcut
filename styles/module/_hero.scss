@@ -32,12 +32,46 @@ Hero: General
   text-align: center;
 }
 
-.hero-search-input {
+input.hero-search-input {
+  display: block;
   height: 3.5rem;
   width: 100%;
   background-color: white;
   margin-bottom: .75rem;
+  border: none;
   border-radius: $border-radius;
+  -webkit-appearance: none;
+  padding: 1.4rem 2.75rem 1.25rem 2.75rem;
+  box-sizing: border-box;
+  font-size: .95em;
+  color: $results-text-medium-color;
+}
+
+.hero-search-input-wrap {
+  position: relative;
+
+  svg {
+    color: $text-grey-color;
+  }
+}
+
+.hero-search-input-icon {
+  position: absolute;
+  left: 1.25rem;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+.hero-search-input-close-icon {
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translate(0%, -50%);
+  font-size: 15px;
+}
+
+svg.hero-search-input-close-icon {
+  color: $results-text-medium-color;
 }
 
 .hero-search-btn {
