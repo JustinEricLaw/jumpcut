@@ -3,7 +3,6 @@ Typography
 ****************************************** */
 html {
   font-size: 100%;
-  line-height: 1.4;
   text-size-adjust: 100%;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
@@ -26,6 +25,10 @@ p,
 li {
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
 
 
 // ::-moz-selection {

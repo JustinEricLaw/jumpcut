@@ -1,3 +1,18 @@
 /* ******************************************
 Layout: Nav
 ****************************************** */
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu-list {
+  display: none;
+}
+
+.nav-hamburger {
+  height: 32px;
+  width: 32px;
+  background-color: white;
+}

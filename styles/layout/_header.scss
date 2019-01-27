@@ -1,3 +1,19 @@
 /* ******************************************
 Layout: Header
 ****************************************** */
+.header-container {
+  background-color: $primary-dark-color;
+  color: #fff;
+  padding: $spacing1 $spacing2;
+}
+
+.header-logo {
+  display: inline-block;
+  line-height: 0;
+}
+
+.header-logo-svg {
+  height: 1.4rem;
+  width: auto;
+  fill: #fff;
+}
