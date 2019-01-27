@@ -39,6 +39,11 @@ MIXINS: General
   }
 }
 
+@mixin circle-spacer {
+  font-size: 5px;
+  margin: 0 .25rem;
+}
+
 
 /**************************************************
 MIXINS: Breakpoints

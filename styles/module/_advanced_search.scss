@@ -20,8 +20,7 @@ Advanced Search
   color: $text-grey-color;
 
   .fa-circle {
-    font-size: 5px;
-    margin: 0 .25rem;
+    @include circle-spacer;
   }
 }
 
