@@ -1,0 +1,46 @@
+/**************************************************
+Results
+**************************************************/
+.results-container {
+  background-color: $bg-grey-color;
+  padding: $spacing3 $spacing3;
+  color: $results-text-dark-color;
+}
+
+.results-h2 {
+  font-size: 1.2em;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: $spacing3;
+}
+
+.results-number {
+  font-weight: 600;
+}
+
+.results-card {
+  padding: 1.25rem;
+  list-style-type: none;
+  border-radius: $border-radius;
+  height: 15rem;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(black, .15);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.results-card-headshot {
+  display: inline-block;
+  background: url(../img/steve-zissou.jpg);
+  background-color: $secondary-color;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.results-card-h4 {
+  font-size: 1.15em;
+}

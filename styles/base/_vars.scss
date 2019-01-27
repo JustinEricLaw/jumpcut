@@ -1,9 +1,11 @@
 /**************************************************
 Colors
 **************************************************/
-$primary-dark-color: #0C131B; // Black
-$secondary-color: #50f8df; // Aqua
-$border-color: #d3d3d3; // Light Grey
+$primary-dark-color: #12202d; // Black
+$secondary-color: #35e8ca; // Aqua
+$bg-grey-color: #f7f7f7; // Light Grey Background
+$text-grey-color: #a9b1b4; // Light Grey Text
+$results-text-dark-color: #10202f;
 
 
 /**************************************************
@@ -18,10 +20,9 @@ Spacing & Sizing
 $spacing: .5rem;
 $spacing1: 1rem;
 $spacing2: 1.75rem;
-$spacing3: 2.25rem;
-$spacing4: 3rem;
-$spacing5: 4rem;
+$spacing3: 3rem;
 $max-width: 75rem;
+$border-radius: 4px;
 
 
 /**************************************************

@@ -7,6 +7,38 @@ MIXINS: General
   justify-content: center;
 }
 
+@mixin text-shadow {
+  text-shadow: 1px 1px 8px rgba(black, .5);
+}
+
+@mixin primary-btn {
+  display: inline-block;
+  border: none;
+  padding: 0.1rem 2.5rem;
+  margin: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: $border-radius;
+  background: $secondary-color;
+  color: $primary-dark-color;
+  font-family: $font-stack-main;
+  font-size: 1em;
+  cursor: pointer;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  height: 3.75rem;
+  line-height: 3.75rem;
+
+  &:hover,
+  &:focus {
+
+  }
+}
+
 
 /**************************************************
 MIXINS: Breakpoints

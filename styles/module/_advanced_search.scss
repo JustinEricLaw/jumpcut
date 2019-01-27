@@ -1,0 +1,33 @@
+/**************************************************
+Advanced Search
+**************************************************/
+.advanced-search-container {
+  background-color: $bg-grey-color;
+  padding: $spacing3 $spacing2;
+  text-align: center;
+}
+
+.advanced-search-text-container {
+  padding-bottom: $spacing1;
+}
+
+.advanced-search-h2 {
+  font-weight: 500;
+}
+
+.advanced-search-stats {
+  @include flexbox-center;
+  color: $text-grey-color;
+
+  .fa-circle {
+    font-size: 5px;
+    margin: 0 .25rem;
+  }
+}
+
+.advanced-search-btn {
+  @include primary-btn;
+  background-color: $primary-dark-color;
+  color: white;
+  padding: .1rem 1.25rem;
+}

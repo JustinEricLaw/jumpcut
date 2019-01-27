@@ -36,8 +36,12 @@ Hero: General
   height: 3.5rem;
   width: 100%;
   background-color: white;
-  margin-bottom: $spacing;
-  border-radius: 4px;
+  margin-bottom: .75rem;
+  border-radius: $border-radius;
+}
+
+.hero-search-btn {
+  @include primary-btn;
 }
 
 
@@ -45,16 +49,18 @@ Hero: General
 Hero: Headings
 ****************************************** */
 .hero-heading-container {
-  margin-bottom: $spacing2;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 .hero-h1 {
+  @include text-shadow;
   font-size: 1.7em;
   font-weight: 600;
 }
 
-.hero-h2 {
+.hero-h3 {
+  @include text-shadow;
   font-size: 1em;
   font-weight: 100;
 }
