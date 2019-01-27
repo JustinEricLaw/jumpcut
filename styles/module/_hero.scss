@@ -15,6 +15,7 @@ Hero: General
 .hero-content {
   padding: $spacing2;
   z-index: 1;
+  flex: 1;
 }
 
 .hero-overlay {
@@ -28,6 +29,7 @@ Hero: General
 
 .hero-search-container {
   color: $primary-dark-color;
+  text-align: center;
 }
 
 .hero-search-input {
@@ -49,7 +51,7 @@ Hero: Headings
 
 .hero-h1 {
   font-size: 1.7em;
-  margin-bottom: $spacing;
+  font-weight: 600;
 }
 
 .hero-h2 {

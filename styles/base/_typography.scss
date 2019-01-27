@@ -7,6 +7,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+  font-family: $font-stack-main;
 
   // @include bp(sm) {
   //   font-size: 110%;
@@ -21,8 +22,10 @@ html {
   // }
 }
 
-p,
-li {
+h1, h2, h3, h4, h5, h6 {
+}
+
+p, li {
 }
 
 a {
@@ -31,12 +34,12 @@ a {
 }
 
 
-// ::-moz-selection {
-//   background: $secondary-color;
-//   color: #fff;
-// }
+::-moz-selection {
+  background: $secondary-color;
+  color: #fff;
+}
 
-// ::selection {
-//   background: $secondary-color;
-//   color: #fff;
-// }
+::selection {
+  background: $secondary-color;
+  color: #fff;
+}
