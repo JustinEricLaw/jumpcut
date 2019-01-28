@@ -73,19 +73,19 @@ MIXINS: General
 MIXINS: Breakpoints
 **************************************************/
 @mixin breakpoint($point) {
-  @if $point == sm {
-    @media screen and (min-width: $break-sm) { @content; }
+  @if $point == $mobile-lg {
+    @media screen and (min-width: $mobile-lg) { @content; }
   }
-  @if $point == md {
-    @media screen and (min-width: $break-md) { @content; }
+  @if $point == $tablet-sm {
+    @media screen and (min-width: $tablet-sm) { @content; }
   }
-  @if $point == md2 {
-    @media screen and (min-width: $break-md2) { @content; }
+  @if $point == $tablet-md {
+    @media screen and (min-width: $tablet-md) { @content; }
   }
-  @if $point == lg {
-    @media screen and (min-width: $break-lg) { @content; }
+  @if $point == $tablet-lg {
+    @media screen and (min-width: $tablet-lg) { @content; }
   }
-  @if $point == xlg {
-    @media screen and (min-width: $break-xlg) { @content; }
+  @if $point == $desktop-xsm {
+    @media screen and (min-width: $desktop-xsm) { @content; }
   }
 }

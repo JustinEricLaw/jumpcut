@@ -5,6 +5,10 @@ Layout: Header
   background-color: $primary-dark-color;
   color: #fff;
   padding: $spacing1 $spacing2;
+
+  @include breakpoint($tablet-md) {
+    padding: $spacing1 $spacing3;
+  }
 }
 
 .header-logo {

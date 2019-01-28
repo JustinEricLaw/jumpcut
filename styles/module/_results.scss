@@ -28,6 +28,7 @@ Results: Cards
   .fa-map-marker-alt {
     font-size: 12px;
     margin-right: .25rem;
+    margin-bottom: 3px;
   }
 
   .fa-circle {
@@ -141,6 +142,7 @@ Results: Pagination
 .results-next {
   font-size: 1.2em;
   margin: 0 1.25rem;
+  cursor: pointer;
 }
 
 .results-page-number {
@@ -151,6 +153,7 @@ Results: Pagination
   font-size: 1.1em;
   margin: 0 .25rem;
   padding: .15rem 0 0;
+  cursor: pointer;
 }
 
 .results-current-page {

@@ -27,9 +27,23 @@ Hero: General
   background-color: rgba($primary-dark-color, .4);
 }
 
+
+/* ******************************************
+Hero: Search
+****************************************** */
 .hero-search-container {
   color: $primary-dark-color;
   text-align: center;
+
+  @include breakpoint($tablet-md) {
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    display: flex;
+    max-width: 100%;
+  }
 }
 
 input.hero-search-input {
@@ -37,7 +51,6 @@ input.hero-search-input {
   height: 3.5rem;
   width: 100%;
   background-color: white;
-  margin-bottom: .75rem;
   border: none;
   border-radius: $border-radius;
   -webkit-appearance: none;
@@ -49,9 +62,51 @@ input.hero-search-input {
 
 .hero-search-input-wrap {
   position: relative;
+  margin-bottom: .75rem;
+
+  @include breakpoint($tablet-sm) {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint($tablet-md) {
+    margin-bottom: .75rem;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    margin-bottom: 0;
+    margin-right: .5rem;
+  }
 
   svg {
     color: $text-grey-color;
+  }
+}
+
+.hero-search-location-wrap {
+  @include breakpoint($tablet-sm) {
+    display: inline-block;
+    width: 60%;
+    margin-right: 3%;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    display: block;
+    width: auto;
+    margin-right: .5rem;
+    flex: 1 0 25%;
+  }
+}
+
+.hero-search-distance-wrap {
+  @include breakpoint($tablet-sm) {
+    display: inline-block;
+    width: 37%;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    display: block;
+    width: auto;
+    flex: 1 0 15%;
   }
 }
 
@@ -76,6 +131,11 @@ svg.hero-search-input-close-icon {
 
 .hero-search-btn {
   @include primary-btn;
+
+  @include breakpoint($desktop-xsm) {
+    height: 3.5rem;
+    line-height: 3.5rem;
+  }
 }
 
 
@@ -91,10 +151,40 @@ Hero: Headings
   @include text-shadow;
   font-size: 1.7em;
   font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: .25rem;
+
+  @include breakpoint($mobile-lg) {
+    font-size: 2em;
+  }
+
+  @include breakpoint($tablet-sm) {
+    font-size: 2.5em;
+  }
+
+  @include breakpoint($tablet-md) {
+    font-size: 3em;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    font-size: 3.5em;
+  }
 }
 
 .hero-h3 {
   @include text-shadow;
   font-size: 1em;
   font-weight: 100;
+
+  @include breakpoint($tablet-sm) {
+    font-size: 1.2em;
+  }
+
+  @include breakpoint($tablet-md) {
+    font-size: 1.4em;
+  }
+
+  @include breakpoint($tablet-md) {
+    font-size: 1.5em;
+  }
 }

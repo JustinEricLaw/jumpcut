@@ -36,8 +36,13 @@ $timing-duration: .75s;
 /**************************************************
 Breakpoints
 **************************************************/
-$break-sm: 31.25em; // 500px
-$break-md: 56.25em; // 900px
-$break-md2: 68.75em; // 1100px
-$break-lg: 87.5em; // 1400px
-$break-xlg: 112.5em; // 1800px
+$mobile-lg: 31.25em; // 500px
+$mobile-landscape: (max-width 46.25em) (orientation landscape); // 740px
+$tablet-sm: 37.5em; // 600px
+$tablet-md: 46.875em; // 750px
+$tablet-lg: 62.5em; // 1000px
+$desktop-xsm: 68.75em; // 1100px
+$desktop-sm: 75em; // 1200px
+$desktop-md: 84.375em; // 1350px
+$desktop-lg: 112.5em; // 1800px
+$desktop-xlg: 131.25em; // 2100px
