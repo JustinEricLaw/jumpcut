@@ -7,13 +7,16 @@ Hamburger
   align-items: center;
   cursor: pointer;
   position: relative;
+
+  @include breakpoint($desktop-xsm) {
+    display: none;
+  }
 }
 
 .hamburger {
   @include flexbox-center;
   width: 1.75rem;
   display: inline-block;
-  cursor: pointer;
   transition-property: opacity, filter;
   transition-duration: 0.15s;
   transition-timing-function: linear;

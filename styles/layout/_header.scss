@@ -9,6 +9,10 @@ Layout: Header
   @include breakpoint($tablet-md) {
     padding: $spacing1 $spacing3;
   }
+
+  @include breakpoint($desktop-xsm) {
+    padding: $spacing2 $spacing2;
+  }
 }
 
 .header-logo {

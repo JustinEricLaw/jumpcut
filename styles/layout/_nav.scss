@@ -5,14 +5,81 @@ Layout: Nav
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @include breakpoint($desktop-sm) {
+    max-width: 71.5rem;
+    margin: 0 auto;
+  }
 }
 
 .nav-menu-list {
   display: none;
+
+  @include breakpoint($desktop-xsm) {
+    display: flex;
+  }
 }
 
-.nav-hamburger {
-  height: 32px;
-  width: 32px;
-  background-color: white;
+.nav-menu-list li {
+  list-style-type: none;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  font-size: .85em;
+  font-weight: 100;
+  letter-spacing: .05em;
+
+  &.nav-menu-selected {
+    color: $secondary-color;
+  }
+}
+
+.nav-left-wrap {
+  @include breakpoint($desktop-xsm) {
+    @include flexbox-center;
+  }
+}
+
+.nav-menu-account-wrap {
+  display: none;
+
+  @include breakpoint($desktop-xsm) {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.nav-menu-account-wrap {
+  .fa-bell,
+  .fa-comment {
+    font-size: 1.5em;
+  }
+}
+
+.nav-menu-account-wrap {
+  .fa-user {
+    font-size: 1.1em;
+  }
+}
+
+.nav-menu-icon-wrap {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
+  margin: 0 .75rem;
+}
+
+.nav-menu-user {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $text-grey-color;
+  border-radius: 50px;
+}
+
+.nav-menu-user-initials {
+  margin: 0;
+  width: 1.5rem;
 }
