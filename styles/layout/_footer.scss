@@ -1,3 +1,24 @@
 /* ******************************************
 Layout: Footer
 ****************************************** */
+.footer-container {
+  background-color: $primary-dark-color;
+  color: $text-grey-color;
+  padding: $spacing2 $spacing2;
+  text-align: center;
+  font-size: .85em;
+}
+
+.footer-links-wrap {
+  padding: .15rem 0;
+}
+
+.footer-links-wrap-1 span:last-child,
+.footer-links-wrap-2 span:last-child,
+.footer-links-wrap-3 span:last-child {
+  display: none;
+}
+
+.footer-divider {
+  padding: 0 .25rem;
+}
