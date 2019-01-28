@@ -16,6 +16,10 @@ Hero: General
   padding: $spacing2;
   z-index: 1;
   flex: 1;
+
+  @include breakpoint($desktop-sm) {
+    max-width: $max-width;
+  }
 }
 
 .hero-overlay {
@@ -36,7 +40,7 @@ Hero: Search
   text-align: center;
 
   @include breakpoint($tablet-md) {
-    max-width: 25rem;
+    max-width: 30rem;
     margin: 0 auto;
   }
 

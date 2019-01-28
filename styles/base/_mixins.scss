@@ -55,7 +55,11 @@ MIXINS: General
 
 @mixin circle-spacer {
   font-size: 5px;
-  margin: 0 .25rem;
+  margin: 0 .3rem;
+
+  @include breakpoint($tablet-md) {
+    margin: 0 1rem;
+  }
 }
 
 @mixin card-container {
@@ -87,5 +91,8 @@ MIXINS: Breakpoints
   }
   @if $point == $desktop-xsm {
     @media screen and (min-width: $desktop-xsm) { @content; }
+  }
+  @if $point == $desktop-sm {
+    @media screen and (min-width: $desktop-sm) { @content; }
   }
 }

@@ -3,21 +3,51 @@ Advanced Search
 **************************************************/
 .advanced-search-container {
   background-color: $bg-grey-color;
-  padding: $spacing3 $spacing2;
   text-align: center;
+}
+
+.advanced-search-content {
+  padding: $spacing3 $spacing2;
+
+  @include breakpoint($tablet-md) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $spacing3 $spacing3;
+  }
+
+  @include breakpoint($desktop-xsm) {
+    padding: $spacing3 $spacing2;
+    max-width: $max-width;
+    margin: 0 auto;
+  }
 }
 
 .advanced-search-text-container {
   padding-bottom: $spacing1;
+
+  @include breakpoint($tablet-md) {
+    padding-bottom: 0;
+    text-align: left;
+  }
 }
 
 .advanced-search-h2 {
   font-weight: 500;
+
+  @include breakpoint($tablet-md) {
+    font-size: 2em;
+  }
 }
 
 .advanced-search-stats {
   @include flexbox-center;
   color: $text-grey-color;
+  font-size: .95em;
+
+  @include breakpoint($tablet-md) {
+    display: block;
+  }
 
   .fa-circle {
     @include circle-spacer;
