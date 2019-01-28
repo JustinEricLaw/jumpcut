@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",function(){document.querySelector(".hamburger-toggle").addEventListener("click",function(){document.querySelector(".header-container").classList.toggle("nav-mobile-menu-open")});var e=new ScrollTrigger});
+document.addEventListener("DOMContentLoaded",function(){document.querySelector(".hamburger-toggle").addEventListener("click",function(){document.querySelector(".header-container").classList.toggle("nav-mobile-menu-open"),document.querySelector(".hamburger").classList.toggle("is-active")})});
