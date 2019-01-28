@@ -17,10 +17,25 @@ Layout: Footer
   padding: .15rem 0;
 }
 
+.footer-links-wrap-1,
+.footer-links-wrap-2,
+.footer-links-wrap-3 {
+  @include breakpoint($tablet-lg) {
+    display: inline-block;
+  }
+}
+
 .footer-links-wrap-1 span:last-child,
 .footer-links-wrap-2 span:last-child,
 .footer-links-wrap-3 span:last-child {
   display: none;
+}
+
+.footer-links-wrap-1 span:last-child,
+.footer-links-wrap-2 span:last-child {
+  @include breakpoint($tablet-lg) {
+    display: inline-block;
+  }
 }
 
 .footer-divider {
