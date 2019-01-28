@@ -15,7 +15,14 @@ Results: Header
   font-size: 1.2em;
   font-weight: 300;
   text-align: center;
-  padding-bottom: $spacing3;
+  padding-bottom: $spacing2;
+
+  @include breakpoint($desktop-xsm) {
+    max-width: 75rem;
+    padding: 0 1.75rem 1rem;
+    margin: 0 auto;
+    text-align: left;
+  }
 }
 
 .results-number {

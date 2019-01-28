@@ -46,7 +46,7 @@ Advanced Search
   font-size: .95em;
 
   @include breakpoint($tablet-md) {
-    display: block;
+    justify-content: flex-start;
   }
 
   .fa-circle {

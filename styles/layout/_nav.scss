@@ -34,9 +34,7 @@ Layout: Nav
 }
 
 .nav-left-wrap {
-  @include breakpoint($desktop-xsm) {
-    @include flexbox-center;
-  }
+  @include flexbox-center;
 }
 
 .nav-menu-account-wrap {
