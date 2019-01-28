@@ -2,6 +2,26 @@
 Map
 **************************************************/
 .map-container {
+  @include flexbox-center;
   height: 20rem;
   background-color: $primary-dark-color;
+  background: url(../img/map.png);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: none;
+  box-shadow: inset 0 0 10px rgba(black, .25);
+  overflow: hidden;
+
+  .fa-map-marker-alt {
+    font-size: 2.5em;
+  }
+}
+
+.map-spotlight {
+  @include flexbox-center;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 100%;
+  background-color: rgba($text-grey-color, .35);
+  transform: scale(1.1);
 }

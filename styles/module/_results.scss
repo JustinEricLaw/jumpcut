@@ -1,5 +1,5 @@
 /**************************************************
-Results
+Results: Header
 **************************************************/
 .results-container {
   background-color: $bg-grey-color;
@@ -18,14 +18,12 @@ Results
   font-weight: 600;
 }
 
+
+/**************************************************
+Results: Cards
+**************************************************/
 .results-card {
-  padding: 1.5rem;
-  list-style-type: none;
-  border-radius: $border-radius;
-  background-color: white;
-  box-shadow: 0px 0px 8px rgba(black, .15);
-  margin-bottom: 1.5rem;
-  text-align: center;
+  @include card-container;
 
   .fa-map-marker-alt {
     font-size: 12px;
@@ -38,18 +36,68 @@ Results
   }
 }
 
+.results-is-highlighted {
+  border: 2px solid $secondary-color;
+}
+
+
+/**************************************************
+Results: Headshot
+**************************************************/
 .results-card-headshot {
-  display: inline-block;
-  background: url(../img/steve-zissou.jpg);
+  @include flexbox-center;
   background-color: $secondary-color;
-  background-size: cover;
   background-position: 50% 50%;
   background-repeat: none;
   height: 5rem;
   width: 5rem;
   border-radius: 50%;
+  margin: 0 auto .75rem;
 }
 
+.results-cards-container li:nth-child(1) {
+  .results-card-headshot {
+    background: url(../img/headshot-1.jpg);
+    background-size: cover;
+  }
+}
+
+.results-cards-container li:nth-child(3) {
+  .results-card-headshot {
+    background: url(../img/headshot-3.jpg);
+    background-size: cover;
+  }
+}
+
+.results-cards-container li:nth-child(4) {
+  .results-card-headshot {
+    background: url(../img/headshot-4.jpg);
+    background-size: cover;
+  }
+}
+
+.results-cards-container li:nth-child(6) {
+  .results-card-headshot {
+    background: url(../img/headshot-6.jpg);
+    background-size: cover;
+  }
+}
+
+.results-initials {
+  font-weight: 700;
+  font-size: 2em;
+  color: white;
+  padding: .25rem .25rem 0;
+}
+
+.results-headshot-has-status {
+  background-color: $results-headshot-status;
+}
+
+
+/**************************************************
+Results: Info
+**************************************************/
 .results-card-h4 {
   font-size: 1.15em;
 }
@@ -77,15 +125,39 @@ Results
 }
 
 .results-card-btn {
-  @include primary-btn;
-  background-color: transparent;
+  @include outline-btn;
+}
+
+
+/**************************************************
+Results: Pagination
+**************************************************/
+.results-pagination-container {
+  @include flexbox-center;
   color: $results-text-medium-color;
-  border: 1px solid $results-text-medium-color;
-  font-size: .85em;
-  text-transform: capitalize;
-  font-weight: 400;
+}
+
+.results-previous,
+.results-next {
+  font-size: 1.2em;
+  margin: 0 1.25rem;
+}
+
+.results-page-number {
+  @include flexbox-center;
   height: 2rem;
-  line-height: 2rem;
-  padding: 0.1rem .5rem;
-  margin: 0 .15rem;
+  width: 2rem;
+  border-radius: $border-radius;
+  font-size: 1.1em;
+  margin: 0 .25rem;
+  padding: .25rem 0 0;
+}
+
+.results-current-page {
+  @include flexbox-center;
+  background-color: $secondary-color;
+  color: $bg-grey-color;
+  height: 2rem;
+  width: 2rem;
+  border-radius: $border-radius;
 }
