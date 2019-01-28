@@ -90,6 +90,7 @@ Results: Headshot
   width: 5rem;
   border-radius: 50%;
   margin: 0 auto .75rem;
+  position: relative;
 }
 
 .results-cards-container li:nth-child(1) {
@@ -130,6 +131,25 @@ Results: Headshot
 .results-headshot-has-status {
   background-color: $results-headshot-status;
 }
+
+.results-status-icon {
+  height: 1rem;
+  width: 1rem;
+  background-color: $headshot-status-orange;
+  border-radius: 50%;
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  border: 2px solid white;
+  transform: rotate(45deg) translate(2.5rem); // translate = half of headshot width
+  margin: -0.5rem; // Half of icon width
+
+  &.results-is-online {
+    background-color: $headshot-status-green;
+  }
+}
+
+
 
 
 /**************************************************
