@@ -135,6 +135,7 @@ svg.hero-search-input-close-icon {
 
 .hero-search-btn {
   @include primary-btn;
+  @include tranparent-btn-hover;
 
   @include breakpoint($desktop-xsm) {
     height: 3.5rem;

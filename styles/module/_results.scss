@@ -202,6 +202,7 @@ Results: Info
 
 .results-card-btn {
   @include outline-btn;
+  @include outline-btn-hover;
 
   @include breakpoint($tablet-sm) {
     display: block;
