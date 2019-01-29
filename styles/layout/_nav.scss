@@ -73,6 +73,13 @@ Layout: Nav
   height: 2rem;
   width: 2rem;
   margin: 0 .75rem;
+  cursor: pointer;
+  transition: ease color .15s;
+
+  &:hover {
+    color: $secondary-color;
+    transition: ease color .25s;
+  }
 }
 
 .nav-menu-user {
@@ -81,6 +88,12 @@ Layout: Nav
   align-items: center;
   background-color: $text-grey-color;
   border-radius: 50px;
+
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-dark-color;
+    transition: ease color .25s;
+  }
 }
 
 .nav-menu-user-initials {

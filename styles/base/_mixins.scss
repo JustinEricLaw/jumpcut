@@ -74,17 +74,19 @@ MIXINS: General
 
 // Hover Underline
 @mixin hover-underline {
-  &::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: $secondary-color;
-    transition: width ease .15s;
-  }
-  &:hover::after {
-    width: 100%;
-    transition: width ease .3s;
+  @include breakpoint($desktop-xsm) {
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background-color: $secondary-color;
+      transition: width ease .15s;
+    }
+    &:hover::after {
+      width: 100%;
+      transition: width ease .3s;
+    }
   }
 }
 
