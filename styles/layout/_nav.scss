@@ -21,6 +21,7 @@ Layout: Nav
 }
 
 .nav-menu-list li {
+  @include hover-underline;
   list-style-type: none;
   text-transform: uppercase;
   margin-left: 2rem;
@@ -30,6 +31,10 @@ Layout: Nav
 
   &.nav-menu-selected {
     color: $secondary-color;
+
+    &:hover::after {
+      width: 0;
+    }
   }
 }
 
